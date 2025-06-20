@@ -1,0 +1,171 @@
+body {
+    background: linear-gradient(270deg, #50e5ff, #47eaff, #22ccc9, #64bbb9); /* Match admin-dashboard-container background */
+    background-size: 500% 500%; /* Larger background for smooth animation */
+    animation: gradientAnimation 15s linear infinite; /* Fixed animation with linear timing */
+    color: white; /* White text for better contrast */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a clean font */
+  }
+  
+  .dashboard-container {
+    display: flex;
+   /* background: linear-gradient(270deg, #50e5ff, #47eaff, #4d0ae8, #64bbb9); /* Match admin-dashboard-container background */
+    background-size: 500% 500%; /* Larger background for smooth animation */
+    animation: gradientAnimation 15s linear infinite; /* Fixed animation with linear timing */
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black; /* Unified background color */
+    color: white; /* Unified text color */
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 1.8rem; /* Unified font size */
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(138, 134, 134, 0.2); /* Unified shadow */
+    z-index: 10;
+    display: flex; /* Added flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d8e178;
+  }
+  
+  .navbar-user {
+    font-size: 0.9rem;
+  }
+  
+  .content {
+    padding: 80px 20px 20px;
+  }
+  
+  .welcome-section {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: bold;
+    color: #ff5733; /* Changed color to a vibrant orange */
+    margin-top: 80px; /* Add spacing to prevent overlap with navbar */
+    margin-bottom: 30px; /* Gap between welcome text and table */
+  }
+  
+  .notifications-section {
+    flex: 1;
+    padding: 20px;
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 1000px;
+    margin-top: 0; /* Removed unnecessary top margin */
+    overflow: hidden; /* Prevent horizontal overflow */
+  }
+  
+  .notifications-section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  }
+  
+  .notifications-container {
+    background-color: #f9f9f9; /* Light card background */
+    color: #e11515; /* Dark text for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Stronger shadow */
+  }
+  
+  .notifications-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .notifications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-height: 400px; /* Set maximum height for the table */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: block; /* Ensure the table behaves as a block element for scrolling */
+  }
+  
+  .notifications-table thead {
+    display: table; /* Keep the header fixed */
+    width: 100%;
+  }
+  
+  .notifications-table tbody {
+    display: block; /* Enable scrolling for the body */
+    max-height: 300px; /* Set maximum height for the table body */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .notifications-table th,
+  .notifications-table td {
+    border: 1px solid #666666; /* Subtle border */
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    background-color: #ffffff; /* Light table background */
+    color: #0a070e; /* Dark text */
+    width: 16.6%; /* Ensure equal column widths */
+  }
+  
+  .notifications-table th {
+    background-color: #0f8821; /* Slightly lighter header background */
+    font-weight: bold;
+    position: sticky; /* Keep the header sticky */
+    top: 0; /* Stick to the top of the scrolling area */
+    z-index: 1; /* Ensure the header is above the body */
+  }
+  
+  .no-notifications {
+    color: #d1ecf1; /* Light blue text */
+    font-size: 0.9rem;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: black; /* Unified background color */
+    color: white; /* Unified text color */
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9rem; /* Slightly smaller font size for footer */
+    font-weight: bold;
+    box-shadow: 0 -2px 4px rgba(138, 134, 134, 0.2); /* Adjusted shadow for footer */
+    z-index: 10;
+  }
+  .x{
+    color: #efb326; /* Light blue text */
+
+  }
+  .footer-text {
+    margin: 0;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
